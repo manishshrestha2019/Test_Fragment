@@ -29,6 +29,9 @@ public class ViewPagerActivity extends AppCompatActivity {
 
         adapter.addFragment(new AddFragment(),"SUM");
         adapter.addFragment(new SecondFragment(),"Area of Circle");
+
+        viewPager.setAdapter(adapter);
+        tabLayout.setupWithViewPager(viewPager);
     }
 
 }
